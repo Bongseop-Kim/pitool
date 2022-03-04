@@ -1,5 +1,6 @@
 /* screen */
 @import "login.css";
+@import "trainer-management";
 /* components */
 @import "sidebar.css";
 /* etc */
