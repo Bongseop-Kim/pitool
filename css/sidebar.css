@@ -1,6 +1,10 @@
-.list-group{
+.nav-list{
     display: none;
 }
 .list-group-routine-name{
+    display: none;
+}
+
+.exercise-list{
     display: none;
 }

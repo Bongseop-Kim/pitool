@@ -7,6 +7,16 @@
 @import "reset.css";
 @import "root.css";
 
-.show {
+.show
+.list-kg {
     display: block;
+}
+.input-box {
+    width: 30px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.none {
+    display: none;
 }
