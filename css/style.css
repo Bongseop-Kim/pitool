@@ -1,6 +1,8 @@
 /* screen */
 @import "login.css";
 @import "trainer-management";
+@import "member.css";
+@import "trainer.css";
 /* components */
 @import "sidebar.css";
 /* etc */
@@ -11,6 +13,7 @@
 .list-kg {
     display: block;
 }
+
 .input-box {
     width: 30px;
     border: none;
@@ -22,14 +25,6 @@
 }
 
 .nav-list{
-    display: none;
-}
-
-.list-group-routine-name{
-    display: none;
-}
-
-.exercise-list{
     display: none;
 }
 

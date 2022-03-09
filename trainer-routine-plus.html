@@ -21,29 +21,33 @@
       <li class="list-group-item">피드백</li>
       <li class="list-group-item">일정</li>
     </ul>
-
-    <script src="js/date.js"></script>
-
+    <div class="container mt-4 row">
+      <div class="col"></div><script src="js/date.js"></script><div class="col"></div>
+    </div>
+  <div class="container mt-4">  
     <span>배정된 루틴</span>
-    <div class="card">
-      <div class="card-body">
-        <a  href="trainer-routine-exercise-plus.html">루틴을 추가해 보세요.
+    <br>
+    <button class="btn btn-info mt-2 w-50" onclick="location='trainer-routine-exercise-plus.html'">
+        <a>루틴을 추가해 보세요.
           <br/>+루틴 추가하기</a>
-      </div>
-    </div>
+    </button>
+    <br>
+    <br>
     <span>루틴 등록시▽</span>
-    <div class="card">
-      <div class="card-body">
+    <br>
+    <button class="btn btn-info mt-2 w-50">
         <a class="routine-name">id=루틴 이름</a>
+        <br>
         <!-- 터치시 루틴에 등록된 운동들 보여줌 -->
-        <li class="list-group-routine-name">
-          <ul>벤치프레스 5set</ul>
-          <ul>플라잉 머신 5set</ul>
-          <ul>체스트 프레스 5set</ul>
-        </li>
-        #휴지통 #연필 #루틴 시작하기
+        <div class="list-group-routine-name none ">
+          <div>벤치프레스 5set</div>
+          <div>플라잉 머신 5set</div>
+          <div>체스트 프레스 5set</div>
+        </div>
+        <div class="mt-2">#휴지통 #연필</div>
       </div>
     </div>
+   </div> 
 
     <script
       src="https://code.jquery.com/jquery-3.6.0.slim.min.js"

@@ -21,27 +21,27 @@
       <li class="list-group-item">피드백</li>
       <li class="list-group-item">일정</li>
     </ul>
-
-    <span>루틴 불러오기</span>
-    <div class="input-group flex-nowrap">
-        <span class="input-group-text" id="addon-wrapping">루틴 이름을 지어주세요.</span>
-        <input type="text" class="form-control" placeholder="ex)요한 회원 루틴" aria-label="Username" aria-describedby="addon-wrapping">
-      </div>
-      <button class="btn btn-primary" type="button" onclick="location.href='trainer-routine-exercise.html'">운동 추가하기</button>
-      <button class="btn btn-primary" type="submit">운동 검색</button>
-
-      <li class="list-group-item list-group-item-info">
-        <ul class="exercise-plus-list">벤치 프레스</ul>
-        <div class="exercise-list">
-          <ul>1set 50kg 8개</ul>
-          <ul>2set 60kg 10개</ul>
-          <ul>3set 70kg 8개</ul>
-          <a href="#">삭제 </a><a href="#">수정</a>
+    <div class="container">
+      <div class="mt-2 mb-2">루틴 불러오기</div>
+      <div class="input-group flex-nowrap">
+          <span class="input-group-text" id="addon-wrapping">루틴 이름을 지어주세요.</span>
+          <input type="text" class="form-control" placeholder="ex)요한 회원 루틴" aria-label="Username" aria-describedby="addon-wrapping">
         </div>
-      </li>
-      
-      <button class="btn btn-primary" type="button" onclick="location.href='trainer-routine-plus.html' ">저장하기</button>
+        <button class="btn btn-primary mt-2 mb-2" type="button" onclick="location.href='trainer-routine-exercise.html'">운동 추가하기</button>
+        <button class="btn btn-primary mt-2 mb-2" type="submit">운동 검색</button>
 
+        <button class="btn btn-info w-100 mb-2">
+          <div class="exercise-plus-list">벤치 프레스</div>
+          <div class="exercise-list none">
+            <div>1set 50kg 8개</div>
+            <div>2set 60kg 10개</div>
+            <div>3set 70kg 8개</div>
+            <a href="#">삭제 </a><a href="#">수정</a>
+          </div>
+        </button>
+        
+        <button class="btn btn-primary" type="button" onclick="location.href='trainer-routine-plus.html' ">저장하기</button>
+      </div>
     <script
       src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
       integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="

@@ -27,13 +27,13 @@ $('.member-plus').on('click', function(){
 
 
 $('.routine-name').on('click', function(){
-    $('.list-group-routine-name').toggleClass('show');
+    $('.list-group-routine-name').toggleClass('none');
 })
 // 등록된 루틴 확인
 
 
 $('.exercise-plus-list').on('click', function(){
-    $('.exercise-list').toggleClass('show');
+    $('.exercise-list').toggleClass('none');
 })
 // 운동 리스트 확인 트레이너
 
