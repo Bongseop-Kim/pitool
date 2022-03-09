@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="kr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>트레이너를 위한 도구, 피툴(PITOOL)</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+          <a href="member-main.html" class="navbar-brand">PITOOL</a>
+          <button class="navbar-toggler" type="button">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+    </nav> 
+    <ul class="list-group list-group-flush sticky-top nav-list">
+      <li class="list-group-item">회원</li>
+      <li class="list-group-item">피드백</li>
+      <li class="list-group-item">일정</li>
+    </ul>
+
+    <div>
+      <h1 id="stopwatch" >
+          00:00:00
+      </h1>
+      <div>
+          <button onclick="startClock()" class="btn btn-info">운동 시작</button>
+          <button onclick="stopClock()" class="btn btn-info">일시 정지</button>
+          <button onclick="resetClock()" class="btn btn-info">운동 종료</button>
+      </div>
+  </div>
+  <br>
+
+  <button class="btn btn-info check-box" onclick="clickCounter()">
+    <div class="container">
+      <span>스쿼트</span>
+      <span>5set  </span><span class="exercise-count">0</span>
+    </div>
+    <div class="btn btn-primary check-count1 un-check"></div>
+    <div class="btn btn-primary check-count2 un-check"></div>
+    <div class="btn btn-primary check-count3 un-check"></div>
+    <div class="btn btn-primary check-count4 un-check"></div>
+    <div class="btn btn-primary check-count5 un-check"></div>
+  </button>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      crossorigin="anonymous"></script>
+    <script src="js/js.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

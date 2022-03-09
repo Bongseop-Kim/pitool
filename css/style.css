@@ -20,3 +20,28 @@
 .none {
     display: none;
 }
+
+.nav-list{
+    display: none;
+}
+
+.list-group-routine-name{
+    display: none;
+}
+
+.exercise-list{
+    display: none;
+}
+
+.exercise-count {
+    border-bottom: 1px solid black;
+}
+
+.un-check {
+    background-color: gray;
+    border: none;
+}
+
+.check {
+    background-color: blue;
+}

@@ -1,5 +1,5 @@
 $('.navbar-toggler').on('click', function(){
-    $('.list-group').toggleClass('show');
+    $('.list-group').toggleClass('nav-list');
 })
 
 
@@ -108,3 +108,60 @@ $('.different-set').on('click', function(){
     $('.order'+i).removeClass('none')
     }
 })
+
+
+// 스톱 워치
+let timerId;
+let time = 0;
+const stopwatch = document.getElementById("stopwatch");
+let  hour, min, sec;
+
+
+function printTime() {
+    time++;
+    stopwatch.innerText = getTimeFormatString();
+}
+
+//시계 시작 - 재귀호출로 반복실행
+function startClock() {
+    printTime();
+    stopClock();
+    timerId = setTimeout(startClock, 1000);
+}
+
+//시계 중지
+function stopClock() {
+    if (timerId != null) {
+        clearTimeout(timerId);
+    }
+}
+
+// 시계 초기화
+function resetClock() {
+    stopClock()
+    stopwatch.innerText = "00:00:00";
+    time = 0;
+}
+
+// 시간(int)을 시, 분, 초 문자열로 변환
+function getTimeFormatString() {
+    hour = parseInt(String(time / (60 * 60)));
+    min = parseInt(String((time - (hour * 60 * 60)) / 60));
+    sec = time % 60;
+
+    return String(hour).padStart(2, '0') + ":" + String(min).padStart(2, '0') + ":" + String(sec).padStart(2, '0');
+}
+
+
+
+
+
+// 운동 진행 횟수 카운터
+
+let counterVal = 0;
+
+function clickCounter (){
+    counterVal ++;
+    $('.check-count'+counterVal).addClass('check')
+    $('.exercise-count').html(counterVal)
+}
