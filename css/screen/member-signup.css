@@ -1,0 +1,41 @@
+.msh-container {
+    display: flex;
+    justify-content: center;
+    margin: 10px 50px;
+}
+.msh-name{
+    width: 110px;
+    height: 26px;
+}
+.msh-id-first,
+.msh-id-second{
+    width: 110px;
+    height:  26px;
+}
+.msh-password {
+    width:250px;
+    height: 26px;
+}
+.msh-gender {
+    height: 26px;
+    width: 70px;
+}
+.msh-tall-weight-box{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.msh-tall-weight{
+    height: 26px;
+    width: 70px;
+}
+.msh-box-margin{
+    margin: 5px 0;
+}
+.msh-save-btn {
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    padding: 3px;
+    height: 26px;
+}

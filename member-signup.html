@@ -3,41 +3,55 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>트레이너를 위한 도구, 피툴(PITOOL)</title>
   </head>
   <body>
-    <div class="container mt-3">
-      <span>회원 회원가입</span>
-      <div class="form-floating mb-3">
-          <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
-          <label for="floatingInput">이름</label>
+    <div class="msh-container">
+    <div>
+      <span>가입 정보</span>
+      <hr>
+      <div>
+        <div>이름*</div>
+        <input type="text" class="msh-name msh-box-margin">
       </div>
-      <div class="form-floating mb-3">
-          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-          <label for="floatingInput">이메일 주소</label>
+      <br>
+      <div>
+        <div>아이디*</div>
+        <input type="text" class="msh-id-first msh-box-margin"> @ 
+        <input type="email" placeholder="example.com" class="msh-id-second msh-box-margin">
       </div>
-      <div class="form-floating">
-          <input type="password" class="form-control mt-3" id="floatingPassword" placeholder="Password">
-          <label for="floatingPassword">비밀번호</label>
+      <br>
+      <div>
+        <div>비밀번호*</div>
+        <input type="password" class="msh-password msh-box-margin">
       </div>
-      <div class="form-floating">
-          <input type="password" class="form-control mt-3" id="floatingPassword" placeholder="Password">
-          <label for="floatingPassword">비밀번호 재확인</label>
+      <br>
+      <div>
+        <div>비밀번호 재확인*</div>
+        <input type="password msh-box-margin" class="msh-password msh-box-margin">
       </div>
-      <select class="form-select mt-3" aria-label="Default select example">
-          <option selected>남/여</option>
-          <option value="1">남자</option>
-          <option value="2">여자</option>
-      </select>
-      <div class="form-floating mb-3">
-          <input type="number" class="form-control mt-3" id="floatingInput" placeholder="name@example.com">
-          <label for="floatingInput">나이</label>
+      <br>
+      <div>  
+        <div>성별</div>
+        <select class="msh-gender msh-box-margin">
+          <option>남</option>
+          <option>여</option>
+        </select>
       </div>
-      <button type="button" onclick="location.href='index.html';" class="btn btn-primary">가입하기</button>
+      <br>
+      <div>
+        <div>키, 몸무게</div>
+      </div>
+      <div class="msh-tall-weight-box">
+        <input class="msh-tall-weight msh-box-margin"><spacn>cm</spacn><input class="msh-tall-weight msh-box-margin">kg
+      </div>
+      <br>
+      <button class="msh-save-btn" onclick="location='member-index.html'">저장</button>
     </div>
+    </div>
+    
+
     <script src="js/js.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

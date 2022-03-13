@@ -22,31 +22,35 @@
       <li class="list-group-item" onclick="location.href='member-member-profile.html'">프로필</li>
       <li class="list-group-item" onclick="location.href='index.html'">로그 아웃</li>
     </ul>
-    <div class="container mt-3">
-    <div>
-      <h1 id="stopwatch" >
-          00:00:00
-      </h1>
-      <div>
-          <button onclick="startClock()" class="btn btn-info">운동 시작</button><br><br>
-          <button onclick="stopClock()" class="btn btn-info">일시 정지</button>
-          <button onclick="resetClock()" class="btn btn-info">운동 종료</button>
-      </div>
-  </div>
-  <br>
 
-  <button class="btn btn-info check-box" onclick="clickCounter()">
-    <div class="container">
-      <span>스쿼트</span>
-      <span>5set  </span><span class="exercise-count">0</span>
+    <div class="sec_cal">
+      <div class="cal_nav">
+        <a href="javascript:;" class="nav-btn go-prev">prev</a>
+        <div class="year-month"></div>
+        <a href="javascript:;" class="nav-btn go-next">next</a>
+      </div>
+      <div class="cal_wrap">
+        <div class="days">
+          <div class="day">MON</div>
+          <div class="day">TUE</div>
+          <div class="day">WED</div>
+          <div class="day">THU</div>
+          <div class="day">FRI</div>
+          <div class="day">SAT</div>
+          <div class="day">SUN</div>
+        </div>
+        <div class="dates"></div>
+      </div>
     </div>
-    <div class="btn btn-primary check-count1 un-check"></div>
-    <div class="btn btn-primary check-count2 un-check"></div>
-    <div class="btn btn-primary check-count3 un-check"></div>
-    <div class="btn btn-primary check-count4 un-check"></div>
-    <div class="btn btn-primary check-count5 un-check"></div>
-  </button>
-</div>
+
+
+      <div class="container">
+        <button type="button" class="btn btn-primary" onclick="location.href='member-exercise-start.html'">운동 하러 가기</button>
+        
+        <button type="button" class="btn btn-primary">기록 확인 하기</button>
+      </div>
+      <!-- 기록이 없을 경우 모달창, 배정된 운동이 없는 경우 모달창 -->
+
     <script
       src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
       integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="

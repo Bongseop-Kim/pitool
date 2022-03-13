@@ -1,14 +1,11 @@
 /* screen */
 @import "login.css";
-@import "trainer-management";
-@import "member.css";
-@import "trainer.css";
+@import "screen/member-signup.css";
 /* components */
-@import "sidebar.css";
+@import "components/calendar.css";
 /* etc */
 @import "reset.css";
 @import "root.css";
-
 .show
 .list-kg {
     display: block;
@@ -40,3 +37,4 @@
 .check {
     background-color: blue;
 }
+
