@@ -1,0 +1,21 @@
+.mes-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.mes-btn {
+    width: 250px;
+}
+.mes-small-btn {
+    width: 115px;
+}
+
+
+.mes-btn-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}

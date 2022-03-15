@@ -1,0 +1,15 @@
+h4 {
+    color: var(--color-gray);
+    margin: 20px 0;
+}
+
+.mypage-profile {
+    padding: 30px 15px;
+}
+
+.indexList {
+    padding: 19px 0;
+    border-bottom: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+}

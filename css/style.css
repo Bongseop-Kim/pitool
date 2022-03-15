@@ -1,11 +1,20 @@
-/* screen */
-@import "login.css";
-@import "screen/member-signup.css";
-/* components */
-@import "components/calendar.css";
 /* etc */
 @import "reset.css";
 @import "root.css";
+/* screen */
+@import "login.css";
+@import "screen/member-signup.css";
+@import "screen/member-profile.css";
+@import "screen/member-index.css";
+@import "screen/member-exercise-start.css";
+/* components */
+@import "components/calendar.css";
+
+
+* {
+    font-size: 13px;
+}
+
 .show
 .list-kg {
     display: block;
