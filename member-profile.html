@@ -8,40 +8,46 @@
     <title>트레이너를 위한 도구, 피툴(PITOOL)</title>
   </head>
   <body>
-    <nav class="navbar navbar-light bg-light sticky-top">
-        <div class="container-fluid">
-          <a href="member-index.html" class="navbar-brand">PITOOL</a>
-          <button class="navbar-toggler" type="button">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
-    </nav> 
-    <ul class="list-group list-group-flush sticky-top nav-list">
-      <li class="list-group-item" onclick="location.href='member-index.html'">메인</li>
-      <li class="list-group-item" onclick="location.href='member-feedback.html'">피드백</li>
-      <li class="list-group-item" onclick="location.href='member-profile.html'">프로필</li>
-      <li class="list-group-item" onclick="location.href='index.html'">로그 아웃</li>
-    </ul>
+    <nav class="nav-container">
+      <div>
+        <button class="navbar-btn" type="button">
+          <img src="icon/menu.png">
+          <span class=""></span>
+        </button>
+      </div>
+      <div class="nav-right">
+        <a href="member-index.html" class="navbar-brand">PITOOL</a>
+      </div>
+  </nav> 
+  <ul class="nav-list">
+    <div class="nav-icons">
+      <img src="icon/close (1).png" class="close-icon">
+    </div>
+    <li class="nav-item" onclick="location.href='member-index.html'">메인</li>
+    <li class="nav-item" onclick="location.href='member-profile.html'">프로필</li>
+    <li class="nav-item" onclick="location.href='index.html'">로그 아웃</li>
+  </ul>
+  
     <div class="mypage-profile">
       <h4>프로필</h4>
       <h4>기본 지표</h4>
       <ul>
-        <li class="indexList">
+        <li class="index-list">
           <strong>회원번호</strong><span>#abc1897</span>
         </li>
-        <li class="indexList">
+        <li class="index-list">
           <strong>성별</strong><span>남성</span>
         </li>
-        <li class="indexList">
+        <li class="index-list">
           <strong>생년월일</strong><span>1998-04-27</span>
         </li>
       </ul>
       <h4>추가 지표</h4>
       <ul>
-        <li class="indexList">
+        <li class="index-list">
           <strong>무게</strong><span>75 kg</span>
         </li>
-        <li class="indexList">
+        <li class="index-list">
           <strong>키</strong><span>180 cm</span>
         </li>
       </ul>

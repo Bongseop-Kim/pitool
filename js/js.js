@@ -1,6 +1,10 @@
-$('.navbar-toggler').on('click', function(){
-    $('.list-group').toggleClass('nav-list');
+$('.navbar-btn').on('click', function(){
+    $('.nav-list').css('transform', 'translateX(0)');
 })
+$('.close-icon').on('click', function(){
+    $('.nav-list').css('transform', 'translateX(-100vw)');
+})
+
 
 
 // document.getElementsByClassName('navbar-toggler')[0].addEventListener('click', function(){
@@ -130,11 +134,11 @@ function startClock() {
 }
 
 //시계 중지
-function stopClock() {
-    if (timerId != null) {
-        clearTimeout(timerId);
-    }
-}
+// function stopClock() {
+//     if (timerId != null) {
+//         clearTimeout(timerId);
+//     }
+// }
 
 // 시계 초기화
 function resetClock() {
@@ -160,8 +164,12 @@ let counterVal = 0;
 
 function clickCounter (){
     counterVal ++;
+    if (counterVal <= 5) {
     $('.check-count'+counterVal).addClass('check')
     $('.exercise-count').html(counterVal)
+    } else {
+        $('.exercise-count').html(5)
+    }
 }
 
 
@@ -259,3 +267,20 @@ function calendarInit() {
     });
 }
 
+// intensity 체크
+
+
+$('.intensity-circle').on('click',function(){
+    $('.intensity-circle').removeClass('ic-check');
+    
+})
+// 누르면 일단 다 지우고 위에 씌우는 방법.... 이런 컴퓨팅사고가 필요함을 느낌
+// 안지우고 하려니 하드코딩 하게 됨
+for (let icCount = 0; icCount < 5; icCount++) {
+    $($('.intensity-circle')[icCount]).on('click', function(){
+        for (let j = 0; j <icCount+1; j++){
+            $($('.intensity-circle')[j]).addClass('ic-check');
+            }
+    })
+}
+// 

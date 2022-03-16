@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>트레이너를 위한 도구, 피툴(PITOOL)</title>
   </head>
@@ -28,39 +27,33 @@
     <li class="nav-item" onclick="location.href='index.html'">로그 아웃</li>
   </ul>
 
-    <div class="sec_cal">
-      <div class="cal_nav">
-        <a href="javascript:;" class="nav-btn go-prev">prev</a>
-        <div class="year-month"></div>
-        <a href="javascript:;" class="nav-btn go-next">next</a>
-      </div>
-      <div class="cal_wrap">
-        <div class="days">
-          <div class="day">MON</div>
-          <div class="day">TUE</div>
-          <div class="day">WED</div>
-          <div class="day">THU</div>
-          <div class="day">FRI</div>
-          <div class="day">SAT</div>
-          <div class="day">SUN</div>
+    <div class="mer-container">
+        <h4>수업내역</h4>
+        <ul>
+            <li class="exercise-list">스쿼트</li>
+            <li class="exercise-list">데드 리프트</li>
+        </ul>
+        <h4>운동강도</h4>
+        <div class="intensity-circle-container">
+            <button type="button" class="intensity-circle" value="1"></button>
+            <button type="button" class="intensity-circle" value="2"></button>
+            <button type="button" class="intensity-circle" value="3"></button>
+            <button type="button" class="intensity-circle" value="4"></button>
+            <button type="button" class="intensity-circle" value="5"></button>
         </div>
-        <div class="dates"></div>
-      </div>
+        <h4>궁금중 및 요구사항</h4>
+        <div class="mer-input-box">
+            <td>
+                <textarea class="mer-textarea"></textarea>
+            </td>
+        </div>
+        <button class="mer-btn" onclick="location=href='member-index.html'">저장하기</button>
     </div>
-
-
-      <div class="mi-container">
-        <button type="button" class="mi-btn" onclick="location.href='member-exercise-start.html'">운동 하러 가기</button>
-        
-        <button type="button" class="mi-btn">기록 확인 하기</button>
-      </div>
-      <!-- 기록이 없을 경우 모달창, 배정된 운동이 없는 경우 모달창 -->
 
     <script
       src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
       integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
       crossorigin="anonymous"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/js.js"></script>
   </body>
 </html>

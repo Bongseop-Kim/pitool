@@ -8,20 +8,26 @@
     <title>트레이너를 위한 도구, 피툴(PITOOL)</title>
   </head>
   <body>
-    <nav class="navbar navbar-light bg-light sticky-top">
-        <div class="container-fluid">
-          <a href="member-index.html" class="navbar-brand">PITOOL</a>
-          <button class="navbar-toggler" type="button">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
-    </nav> 
-    <ul class="list-group list-group-flush sticky-top nav-list">
-      <li class="list-group-item" onclick="location.href='member-index.html'">메인</li>
-      <li class="list-group-item" onclick="location.href='member-feedback.html'">피드백</li>
-      <li class="list-group-item" onclick="location.href='member-profile.html'">프로필</li>
-      <li class="list-group-item" onclick="location.href='index.html'">로그 아웃</li>
-    </ul>
+    <nav class="nav-container">
+      <div>
+        <button class="navbar-btn" type="button">
+          <img src="icon/menu.png">
+          <span class=""></span>
+        </button>
+      </div>
+      <div class="nav-right">
+        <a href="member-index.html" class="navbar-brand">PITOOL</a>
+      </div>
+  </nav> 
+  <ul class="nav-list">
+    <div class="nav-icons">
+      <img src="icon/close (1).png" class="close-icon">
+    </div>
+    <li class="nav-item" onclick="location.href='member-index.html'">메인</li>
+    <li class="nav-item" onclick="location.href='member-profile.html'">프로필</li>
+    <li class="nav-item" onclick="location.href='index.html'">로그 아웃</li>
+  </ul>
+
     <div class="mes-container">
     <div>
       <h1 id="stopwatch" >
@@ -33,20 +39,30 @@
       </div>
       <div class="mes-btn-container">
         <button onclick="stopClock()" class="mi-btn mes-small-btn">일시 정지</button>
-        <button onclick="resetClock()" class="mi-btn mes-small-btn">운동 종료</button>
+        <button onclick="location.href='member-exercise-review.html'" class="mi-btn mes-small-btn">운동 종료</button>
       </div>
   
   <div>
     <button class="mi-btn mes-btn" onclick="clickCounter()">
-      <div class="container">
-        <span>스쿼트</span>
-        <span>5set  </span><span class="exercise-count">0</span>
+      <div class="mes-btn-container">
+        <div>
+          <span>스쿼트</span>
+          <span>5set  </span>
+        </div>
+          <span class="exercise-count">0</span>
       </div>
-      <div class="btn btn-primary check-count1 un-check"></div>
-      <div class="btn btn-primary check-count2 un-check"></div>
-      <div class="btn btn-primary check-count3 un-check"></div>
-      <div class="btn btn-primary check-count4 un-check"></div>
-      <div class="btn btn-primary check-count5 un-check"></div>
+      <div class="mes-btn-container mes-btn-package">
+        <div class="mes-btn-list">
+          <div class="check-count1 un-check"></div>
+          <div class="check-count2 un-check"></div>
+          <div class="check-count3 un-check"></div>
+          <div class="check-count4 un-check"></div>
+          <div class="check-count5 un-check"></div>
+        </div>
+        <div>
+          <span>50kg x 5개</span>
+        </div>
+      </div>
     </button>
   </div>
 </div>

@@ -7,15 +7,16 @@
 @import "screen/member-profile.css";
 @import "screen/member-index.css";
 @import "screen/member-exercise-start.css";
+@import "screen/member-exercise-review.css";
 /* components */
 @import "components/calendar.css";
+@import "components/nav.css";
 
 
 * {
     font-size: 13px;
 }
 
-.show
 .list-kg {
     display: block;
 }
@@ -24,26 +25,5 @@
     width: 30px;
     border: none;
     border-bottom: 1px solid black;
-}
-
-.none {
-    display: none;
-}
-
-.nav-list{
-    display: none;
-}
-
-.exercise-count {
-    border-bottom: 1px solid black;
-}
-
-.un-check {
-    background-color: gray;
-    border: none;
-}
-
-.check {
-    background-color: blue;
 }
 

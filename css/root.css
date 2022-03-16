@@ -1,11 +1,12 @@
 :root {
-    --color-blue: #4a8dc5;
+    --color-blue: #6aa7d8;
     --color-purple: #833a83;
     --color-pink: #cc4e7a;
     --color-sun: #fa7b67;
     --color-orange: #ffb85a;
     --color-yellow: #f9f871;
     --color-gray: #767587;
+    --color-whitegray:#f1f1f8;
   }
 
 .display-flex{

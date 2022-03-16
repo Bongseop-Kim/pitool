@@ -17,5 +17,31 @@
 .mes-btn-container {
     display: flex;
     justify-content: space-between;
-    padding: 0;
+}
+
+.mes-click-btn {
+    width: 20px;
+    background-color: white;
+    height: 10px;
+}
+
+.mes-btn-list {
+    display: flex;
+    align-items: center;
+    margin: 0 2px;
+}
+.mes-btn-package{
+    margin-top: 10px;
+}
+
+.un-check {
+    background-color: white;
+    border: none;
+    width: 20px;
+    height: 10px;
+    margin: 0 2px;
+}
+
+.check {
+    background-color: var(--color-sun)
 }
