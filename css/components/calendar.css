@@ -113,4 +113,5 @@
   
   .day:hover {
     background-color: gainsboro;
+    transition: all 1s;
   }

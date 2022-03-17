@@ -3,7 +3,6 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
   
   <title>트레이너를 위한 도구, 피툴(PITOOL)</title>
@@ -30,87 +29,69 @@
     <li class="nav-item" onclick="location.href='index.html'">로그 아웃</li>
   </ul>
 
-    <table class="table table-striped fs-6 fw-light">
+<div class="ti-screen">
+  <div class="ti-title-line">
+    <h4>회원 명단</h4>
+    <!-- 회원 추가 버튼 -->
+    <button class="ti-member-plus-btn">회원 추가하기</button>
+  </div>
+  <div class="ti-search-line">
+    <button class="ti-delete-btn">삭제</button>
+    <button class="ti-input-container">
+      <img src="icon/loupe.png" class="search-icon">
+      <input placeholder=" 이름 검색" class="ti-search-input">
+    </button>
+  </div>
+    <table class="table-container">
       <thead>
         <tr>
-          <th scope="col">#</th>
-          <th scope="col">이름</th>
-          <th scope="col">성별</th>
-          <th scope="col">나이</th>
-          <th scope="col">PT횟수</th>
-          <th scope="col">관리</th>
-          <th scope="col">프로필</th>
-          <th scope="col">삭제</th>
+          <th class="table-col-s"><button class="table-btn"></button></th>
+          <th class="table-col-s">#</th>
+          <th class="table-col">이름</th>
+          <th class="table-col">성별</th>
+          <th class="table-col">나이</th>
+          <th class="table-col">PT횟수</th>
+          <th class="table-col">관리</th>
+          <th class="table-col">프로필</th>
+          <th class="table-col">삭제</th>
         </tr>
       </thead>
       <tbody class="member-list">
-        <tr>
-          <th>1</th>
+        <tr class="td-container">
+          <td><button class="table-btn"></button></td>
+          <td>1</td>
           <td>신요한</td>
           <td>남자</td>
           <td>24</td>
           <td>10회</td>
-          <td onClick="location.href='trainer-management.html'">클릭!</td>
-          <td>클릭!</td>
-          <td>삭제</td>
-        </tr>
-        <tr>
-          <th>2</th>
-          <td>김봉섭</td>
-          <td>남자</td>
-          <td>24</td>
-          <td>15회</td>
-          <td onClick="location.href='#'">클릭!</td>
-          <td>클릭!</td>
-          <td>삭제</td>
-        </tr>
-        <tr>
-          <th>3</th>
-          <td>Larry</td>
-          <td>남자</td>
-          <td>18</td>
-          <td>15회</td>
-          <td onClick="location.href='#'">클릭!</td>
+          <td onClick="location.href='trainer-management.html'"><img src="icon/eye.png"></td>
           <td>클릭!</td>
           <td>삭제</td>
         </tr>
       </tbody>
     </table>
 
-
-<!-- Button trigger modal -->
-<div class="container">
-  <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#exampleModal">
-  회원 추가하기
-  </button>
-</div>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">회원 추가하기</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <div class="input-group flex-nowrap">
-          <span class="input-group-text" id="addon-wrapping">회원 번호</span>
-          <input type="text" class="form-control" placeholder="#" aria-label="Username" aria-describedby="addon-wrapping">
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
-        <button type="button" class="btn btn-primary member-plus" data-bs-dismiss="modal">추가하기</button>
-      </div>
+  </div>
+  <!--모달 화면-->
+  <div class="modal-screen none">
+    <div>
+      <h3 class="modal-title">회원 추가하기</h3>
+    </div>
+    <div class="member-container">
+      <span>회원 번호</span>
+      <input placeholder="회원 번호를 입력해주세요." class="modal-input">
+    </div>
+    <div class="modal-btn-container">
+      <button class="modal-btn member-plus">추가하기</button>
+      <button class="modal-btn modal-close">닫기</button>
     </div>
   </div>
-</div>
+
+
     <script
       src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
       integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
       crossorigin="anonymous"></script>
     <script src="js/js.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

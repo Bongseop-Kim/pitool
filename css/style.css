@@ -8,9 +8,12 @@
 @import "screen/member-index.css";
 @import "screen/member-exercise-start.css";
 @import "screen/member-exercise-review.css";
+@import "screen/member-login.css";
+@import "screen/trainer-index.css";
 /* components */
 @import "components/calendar.css";
 @import "components/nav.css";
+@import "components/modal.css";
 
 
 * {
@@ -27,3 +30,10 @@
     border-bottom: 1px solid black;
 }
 
+.none {
+    display: none;
+}
+
+.search-icon {
+    width: 15px;
+}

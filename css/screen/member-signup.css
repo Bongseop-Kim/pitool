@@ -33,11 +33,11 @@
     margin: 5px 0;
 }
 .msh-save-btn {
+    background-color: var(--color-blue);
     width: 100px;
     border: none;
     border-radius: 5px;
-    padding: 3px;
-    height: 26px;
+    padding: 5px;
 }
 
 .msh-birthDate {

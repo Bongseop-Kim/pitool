@@ -13,18 +13,26 @@ $('.close-icon').on('click', function(){
 
 
 $('.member-plus').on('click', function(){
+    $('.modal-screen').addClass('none')
     const plus = 
-    `<tr>
-        <th>4</th>
+    `<tr class="td-container">
+        <td><button class="table-btn"></button></td>
+        <td>4</td>
         <td>김나래</td>
         <td>여자</td>
         <td>24</td>
         <td>10회</td>
-        <td onClick="location.href='trainer-management.html'">클릭!</td>
+        <td onClick="location.href='trainer-management.html'"><img src="icon/eye.png"></td>
         <td>클릭!</td>
         <td>삭제</td>
     </tr>`;
     $('.member-list').append(plus)
+})
+$('.modal-close').on('click', function(){
+    $('.modal-screen').addClass('none')
+})
+$('.ti-member-plus-btn').on('click', function(){
+    $('.modal-screen').removeClass('none')
 })
 
 // 추가되는 값들 
@@ -134,11 +142,11 @@ function startClock() {
 }
 
 //시계 중지
-// function stopClock() {
-//     if (timerId != null) {
-//         clearTimeout(timerId);
-//     }
-// }
+function stopClock() {
+    if (timerId != null) {
+        clearTimeout(timerId);
+    }
+}
 
 // 시계 초기화
 function resetClock() {
@@ -282,5 +290,13 @@ for (let icCount = 0; icCount < 5; icCount++) {
             $($('.intensity-circle')[j]).addClass('ic-check');
             }
     })
-}
-// 
+};
+
+// $(document).on('change','.td-container',function(){
+//     alert('hi');
+//     // $('.td-container:even').css('background-color',`var(--color-whitegray)`)
+// })
+
+// $('document').on("change",".td-container",function(){
+//     alert('hi')
+// });

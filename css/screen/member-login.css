@@ -1,0 +1,25 @@
+.member-login-screen{
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 20px 0;
+}
+
+.ml-input-box{
+    margin: 20px;
+}
+.ml-input-inbox{
+    height: 34px;
+    margin-top: 10px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.ml-btn {
+    background-color: var(--color-blue);
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+    padding: 5px;
+    margin: 10px 0;
+}
