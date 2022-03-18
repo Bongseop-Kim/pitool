@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
+  
   <title>트레이너를 위한 도구, 피툴(PITOOL)</title>
 </head>
-
   <body>
     <nav class="nav-container">
       <div>
@@ -29,41 +29,25 @@
     <li class="nav-item" onclick="location.href='index.html'">로그 아웃</li>
   </ul>
 
-  <!-- 달력 -->
-  <div class="sec_cal">
-    <div class="cal_nav">
-      <a href="javascript:;" class="nav-btn go-prev">prev</a>
-      <div class="year-month"></div>
-      <a href="javascript:;" class="nav-btn go-next">next</a>
+  <div class="tf-container">
+    <h4>최근 수업내역</h4>
+    <div class="ta-container">
+        <span class="ta-container-text">회원 궁굼증</span>
+        <div class="member-text-container">
+            <span>운동 너무 쉽군요</span>
+        </div>
     </div>
-    <div class="cal_wrap">
-      <div class="days">
-        <div class="day day-title">MON</div>
-        <div class="day day-title">TUE</div>
-        <div class="day day-title">WED</div>
-        <div class="day day-title">THU</div>
-        <div class="day day-title">FRI</div>
-        <div class="day day-title">SAT</div>
-        <div class="day day-title">SUN</div>
-      </div>
-      <div class="dates"></div>
+    <div class="ta-container">
+        <span class="ta-container-text">답변</span>
+        <textarea class="ta-textarea" placeholder="입력하세요."></textarea>
     </div>
-    
-  </div>
-  <div class="tm-btn-container">
-    <button type="button" class="tm-btn" onclick="location=href='trainer-routine-plus.html'">
-      배정하기
-    </button>
-  </div>
+    <button onclick="location.href='trainer-feedback.html'">저장하기</button>
+</div>
 
-      
-
-    
     <script
       src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
       integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
       crossorigin="anonymous"></script>
     <script src="js/js.js"></script>
-</body>
-
+  </body>
 </html>

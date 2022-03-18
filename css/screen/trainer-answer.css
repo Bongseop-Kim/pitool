@@ -1,0 +1,16 @@
+.ta-textarea{
+    width: 100%;
+    padding: 10px;
+}
+.member-text-container{
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 10px;
+}
+.ta-container{
+    margin-bottom: 10px;
+}
+.ta-container-text{
+    margin-bottom: 5px;
+    display: inline-block;
+}

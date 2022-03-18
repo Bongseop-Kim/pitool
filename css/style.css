@@ -10,6 +10,10 @@
 @import "screen/member-exercise-review.css";
 @import "screen/member-login.css";
 @import "screen/trainer-index.css";
+@import "screen/trainer-management.css";
+@import "screen/trainer-feedback.css";
+@import "screen/trainer-answer.css";
+@import "screen/trainer-routine-plus.css";
 /* components */
 @import "components/calendar.css";
 @import "components/nav.css";
@@ -36,4 +40,22 @@
 
 .search-icon {
     width: 15px;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+.pretty-circle-icon{
+    width: 10px;
+    margin: 0 5px;
+}
+.left-quote-icon {
+    width: 12px;
+    margin-right: 5px;
+}
+
+textarea{
+    resize: none;
 }

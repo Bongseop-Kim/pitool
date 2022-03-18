@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="kr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  
+  <title>트레이너를 위한 도구, 피툴(PITOOL)</title>
+</head>
+  <body>
+    <nav class="nav-container">
+      <div>
+        <button class="navbar-btn" type="button">
+          <img src="icon/menu.png">
+          <span class=""></span>
+        </button>
+      </div>
+      <div class="nav-right">
+        <a href="trainer-index.html" class="navbar-brand">PITOOL</a>
+      </div>
+  </nav> 
+  <ul class="nav-list">
+    <div class="nav-icons">
+      <img src="icon/close (1).png" class="close-icon">
+    </div>
+    <li class="nav-item" onclick="location.href='trainer-index.html'">회원목록</li>
+    <li class="nav-item" onclick="location.href='trainer-feedback.html'">피드백</li>
+    <li class="nav-item" onclick="location.href='trainer-calendar.html'">일정</li>
+    <li class="nav-item" onclick="location.href='index.html'">로그 아웃</li>
+  </ul>
+
+  <div class="tf-container">
+    <h4>최근 수업내역</h4>
+    <div class="recent-class">
+      <div class="tf-card-title">
+        <span class="tf-text">수업 내역</span>
+        <span class="tf-text">22/03/19</span>
+      </div> 
+      <ul>
+          <li class="tf-exercise-list"><img src="icon/new-moon.png" class="pretty-circle-icon">스쿼트</li>
+          <li class="tf-exercise-list"><img src="icon/new-moon.png" class="pretty-circle-icon">데드 리프트</li>
+      </ul>
+      <div class="tf-intensity-container">
+        <span class="tf-text">운동강도</span>
+        <!-- 트레이너는 운동 강도 선택 못하게 변경해야함 -->
+        <div class="tf-intensity-circle-container">
+            <button type="button" class="intensity-circle" value="1"></button>
+            <button type="button" class="intensity-circle" value="2"></button>
+            <button type="button" class="intensity-circle" value="3"></button>
+            <button type="button" class="intensity-circle" value="4"></button>
+            <button type="button" class="intensity-circle" value="5"></button>
+        </div>
+      </div>
+      <span class="tf-text">궁금중 및 요구사항</span>
+      <div class="tf-last-line">
+        <img src="icon/left-quote.png" class="left-quote-icon">
+        <div>한 줄 요약 ㆍㆍㆍㆍ</div>
+      </div>
+      <div class="last-btn-container">
+        <button class="tf-btn" onclick="location.href='trainer-answer.html'">답변하기</button>
+      </div>
+    </div>
+    <!-- 다음 카드 -->
+    <div class="recent-class">
+      <div class="tf-card-title">
+        <span class="tf-text">수업 내역</span>
+        <span class="tf-text">22/06/19</span>
+      </div> 
+      <ul>
+          <li class="tf-exercise-list"><img src="icon/new-moon.png" class="pretty-circle-icon">벤치 프레스</li>
+          <li class="tf-exercise-list"><img src="icon/new-moon.png" class="pretty-circle-icon">티바로우</li>
+      </ul>
+      <div class="tf-intensity-container">
+        <span class="tf-text">운동강도</span>
+        <!-- 트레이너는 운동 강도 선택 못하게 변경해야함 -->
+        <div class="tf-intensity-circle-container">
+            <button type="button" class="intensity-circle" value="1"></button>
+            <button type="button" class="intensity-circle" value="2"></button>
+            <button type="button" class="intensity-circle" value="3"></button>
+            <button type="button" class="intensity-circle" value="4"></button>
+            <button type="button" class="intensity-circle" value="5"></button>
+        </div>
+      </div>
+      <span class="tf-text">궁금중 및 요구사항</span>
+      <div class="tf-last-line">
+        <img src="icon/left-quote.png" class="left-quote-icon">
+        <div> 쉽군요 ㆍㆍㆍㆍ</div>
+      </div>
+      <div class="tf-last-line">
+        <img src="icon/left-quote.png" class="left-quote-icon">
+        <div> 회원... 약하군요 ㆍㆍㆍㆍ</div>
+      </div>
+      <div class="last-btn-container">
+        <button class="tf-btn" onclick="location.href='trainer-answer.html'">답변 수정하기</button>
+      </div>
+    </div>
+</div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      crossorigin="anonymous"></script>
+    <script src="js/js.js"></script>
+  </body>
+</html>

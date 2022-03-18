@@ -1,0 +1,51 @@
+.tf-container {
+    padding: 0 15px;
+}
+.tf-intensity-circle-container{
+    display: flex;
+}
+.tf-intensity-circle {
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+.tf-btn{
+    background-color: var(--color-yellow);
+    border: none;
+    border-radius: 5px;
+    padding: 7px 20px;
+    margin: 5px;
+}
+
+.recent-class{
+    border-radius: 5px;
+    background-color: rgb(168, 247, 152);
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+
+.tf-text{
+    padding: 10px 0;
+    box-sizing: border-box;
+    display: inline-block;
+}
+.tf-intensity-container{
+    display: flex;
+    align-items: center;
+}
+.tf-card-title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tf-last-line{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.last-btn-container{
+    display: flex;
+    justify-content: center;
+}

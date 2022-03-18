@@ -1,0 +1,13 @@
+.tm-btn-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tm-btn{
+    padding: 5px 0;
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color-blue);
+    margin: 20px 0;
+}

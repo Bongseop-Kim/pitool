@@ -115,3 +115,7 @@
     background-color: gainsboro;
     transition: all 1s;
   }
+  .day-title:hover {
+    background-color: white;
+  }
+  

@@ -23,8 +23,8 @@ $('.member-plus').on('click', function(){
         <td>24</td>
         <td>10회</td>
         <td onClick="location.href='trainer-management.html'"><img src="icon/eye.png"></td>
-        <td>클릭!</td>
-        <td>삭제</td>
+        <td onclick="location.href='trainer-member-profile.html'">클릭!</td>
+        <td onclick="location.href='trainer-feedback.html'">클릭</td>
     </tr>`;
     $('.member-list').append(plus)
 })
@@ -280,7 +280,6 @@ function calendarInit() {
 
 $('.intensity-circle').on('click',function(){
     $('.intensity-circle').removeClass('ic-check');
-    
 })
 // 누르면 일단 다 지우고 위에 씌우는 방법.... 이런 컴퓨팅사고가 필요함을 느낌
 // 안지우고 하려니 하드코딩 하게 됨
