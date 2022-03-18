@@ -86,3 +86,6 @@ td img:hover {
     transition: all 1s;
     cursor: pointer;
 }
+.td-container:nth-child(even){
+    background-color: rgb(244, 244, 248);
+}

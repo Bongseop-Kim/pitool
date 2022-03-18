@@ -291,12 +291,3 @@ for (let icCount = 0; icCount < 5; icCount++) {
             }
     })
 };
-
-// $(document).on('change','.td-container',function(){
-//     alert('hi');
-//     // $('.td-container:even').css('background-color',`var(--color-whitegray)`)
-// })
-
-// $('document').on("change",".td-container",function(){
-//     alert('hi')
-// });
