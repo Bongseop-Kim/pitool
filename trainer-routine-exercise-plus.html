@@ -29,27 +29,55 @@
     <li class="nav-item" onclick="location.href='index.html'">로그 아웃</li>
   </ul>
   
-    <div class="container">
-      <div class="mt-2 mb-2">루틴 불러오기</div>
-      <div class="input-group flex-nowrap">
-          <span class="input-group-text" id="addon-wrapping">루틴 이름을 지어주세요.</span>
-          <input type="text" class="form-control" placeholder="ex)요한 회원 루틴" aria-label="Username" aria-describedby="addon-wrapping">
-        </div>
-        <button class="btn btn-primary mt-2 mb-2" type="button" onclick="location.href='trainer-routine-exercise.html'">운동 추가하기</button>
-        <button class="btn btn-primary mt-2 mb-2" type="submit">운동 검색</button>
-
-        <button class="btn btn-info w-100 mb-2">
-          <div class="exercise-plus-list">벤치 프레스</div>
-          <div class="exercise-list none">
-            <div>1set 50kg 8개</div>
-            <div>2set 60kg 10개</div>
-            <div>3set 70kg 8개</div>
-            <a href="#">삭제 </a><a href="#">수정</a>
-          </div>
-        </button>
-        
-        <button class="btn btn-primary" type="button" onclick="location.href='trainer-routine-plus.html' ">저장하기</button>
+  <div class="trep-screen">
+    <div>
+      <button class="trep-routine-loading">루틴 불러오기</button>
+    </div>
+    <span id="addon-wrapping">루틴 이름</span>
+    <input type="text" class="trep-input-box" placeholder="ex)요한 회원 루틴">
+    <div class="trep-seond-line">  
+      <button class="trep-btn" type="button" onclick="location.href='trainer-routine-exercise.html'"><img src="icon/plus.png" class="plus-icon">운동 추가</button>
+      <button class="trep-btn" type="submit"><img src="icon/loupe.png" class="search-icon">운동 검색</button>
+    </div>
+    <button class="trep-exercise-card">
+      <div class="trep-card-firstline">
+        <div>벤치 프레스</div>
+        <div>5 set</div>
       </div>
+      <div class="exercise-list none">
+        <div class="exercise-list-contents">
+          <div>1set 50kg 8개</div>
+          <div>2set 60kg 10개</div>
+          <div>3set 70kg 8개</div>
+        </div>
+        <div class="trep-card-lastline">
+          <a href="#">삭제</a><a href="#">수정</a>
+        </div>
+      </div>
+    </button>
+
+    <button class="trep-exercise-card">
+      <div class="trep-card-firstline">
+        <div>데드 리프트</div>
+        <div>5 set</div>
+      </div>
+      <div class="exercise-list none">
+        <div class="exercise-list-contents">
+          <div>1set 50kg 8개</div>
+          <div>2set 60kg 10개</div>
+          <div>3set 70kg 8개</div>
+        </div>
+        <div class="trep-card-lastline">
+          <a href="#">삭제</a><a href="#">수정</a>
+        </div>
+      </div>
+    </button>
+        
+    <div class="trep-btn-center">
+      <button class="trep-btn-box" type="button" onclick="location.href='trainer-routine-plus.html'">저장하기</button>
+    </div>
+  </div>
+
     <script
       src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
       integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="

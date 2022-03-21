@@ -29,56 +29,30 @@
     <li class="nav-item" onclick="location.href='index.html'">로그 아웃</li>
   </ul>
 
-    <div class="input-group mb-3">
-        <span class="input-group-text" id="basic-addon1">@</span>
-        <input type="text" class="form-control" placeholder="어떤 운동을 하실건가요?" aria-label="Username" aria-describedby="basic-addon1">
+  <div class="tre-screen">
+    <span>어떤 운동을 배정 하실건가요?</span>
+    <input type="text" class="tre-input-box" placeholder="어떤 운동을 하실건가요?">
+    <span>세트 수와 개수, 무게를 알려주세요.</span>
+    <div class="tre-container-first-line">
+      <input id="setting-value" class="tre-input-box-secnod" onkeyup='method()'/>
+      <span>set</span>
+      <div id='result'></div>
+    </div>
+    <div class="tre-container">
+      <div class="tre-second-line">
+        <button type="button" class="tre-second-btn btn-kg-count">무게, 개수</button>
+        <button type="button" class="tre-second-btn btn-count">개수만</button>
+        <button type="button" class="tre-second-btn btn-time">시간</button>
       </div>
-        <div class="container">
-            <span>세트 수와 개수, 무게를 알려주세요.</span>
-            <br>
-            <input id="setting-value" class="input-box" onkeyup='method()'/><span>set</span><div id='result'></div>
-            <br>
-            <br>
-            <button type="button" class="btn btn-info btn-kg-count">무게, 개수</button>
-            <button type="button" class="btn btn-info btn-count">개수만</button>
-            <button type="button" class="btn btn-info btn-time">시간</button>
-            <br>
-            <br>
-            <button type="button" class="btn btn-info all-set">전세트 동일</button>
-            <button type="button" class="btn btn-info different-set">세트마다 다름</button>
-            <br>
-            <div class="time-set"></div>
-            <br>
-            <div class="kg-count-time-list" id="kgcountlist">
-                <!-- <div>1set  
-                    <span class='input-kg'><input class="input-box"/>kg</span>  
-                    <span class='input-count'><input class="input-box"/>개</span>  
-                    <span class='input-time'><input class="input-box "/><span class="hr-mi-se">초</span></span> <br><br>
-                </div>
-                <div>2set  
-                    <span class='input-kg'><input class="input-box"/>kg</span>  
-                    <span class='input-count'><input class="input-box"/>개</span>  
-                    <span class='input-time'><input class="input-box"/><span class="hr-mi-se">초</span></span> <br><br>
-                </div>
-                <div>3set  
-                    <span class='input-kg'><input class="input-box"/>kg</span>  
-                    <span class='input-count'><input class="input-box"/>개</span>  
-                    <span class='input-time'><input class="input-box"/><span class="hr-mi-se">초</span></span> <br><br>
-                </div>
-                <div>4set  
-                    <span class='input-kg'><input class="input-box"/>kg</span>  
-                    <span class='input-count'><input class="input-box"/>개</span>  
-                    <span class='input-time'><input class="input-box"/><span class="hr-mi-se">초</span></span> <br><br>
-                </div>
-                <div>5set  
-                    <span class='input-kg'><input class="input-box"/>kg</span>  
-                    <span class='input-count'><input class="input-box"/>개</span>  
-                    <span class='input-time'><input class="input-box"/><span class="hr-mi-se">초</span></span> <br><br>
-                </div> -->
-            </div>
-            <button type="button" class="btn btn-primary">저장하기</button>
-        </div>
-    
+      <div class="tre-third-line">
+        <button type="button" class="tre-third-btn all-set">전세트 동일</button>
+        <button type="button" class="tre-third-btn different-set">세트마다 다름</button>
+      </div>
+      <div class="time-set"></div>
+      <div class="kg-count-time-list" id="kgcountlist"></div>
+      <button type="button" class="tre-btn">저장하기</button>
+    </div>
+  </div>
 
     <script
       src="https://code.jquery.com/jquery-3.6.0.slim.min.js"

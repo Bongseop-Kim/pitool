@@ -14,6 +14,8 @@
 @import "screen/trainer-feedback.css";
 @import "screen/trainer-answer.css";
 @import "screen/trainer-routine-plus.css";
+@import "screen/trainer-routine-exercise-plus.css";
+@import "screen/trainer-routine-exercise.css";
 /* components */
 @import "components/calendar.css";
 @import "components/nav.css";
@@ -28,11 +30,7 @@
     display: block;
 }
 
-.input-box {
-    width: 30px;
-    border: none;
-    border-bottom: 1px solid black;
-}
+
 
 .none {
     display: none;
@@ -40,6 +38,7 @@
 
 .search-icon {
     width: 15px;
+    margin-right: 5px;
 }
 
 button {
@@ -58,4 +57,17 @@ button {
 
 textarea{
     resize: none;
+}
+
+.trash-can{
+    width: 15px;
+    margin-right: 7px;
+}
+.pencil{
+    width: 15px;
+    margin-right: 7px;
+}
+.plus-icon{
+    width: 15px;
+    margin-right: 5px;
 }

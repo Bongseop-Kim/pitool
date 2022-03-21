@@ -1,0 +1,102 @@
+.tre-screen{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.tre-input-box{
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 5px 0;
+    margin: 15px 0;
+}
+.tre-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tre-input-box-secnod{
+    width: 30px;
+    border: none;
+    border-bottom: 1px solid black;
+    align-items: center;
+    padding: 3px 0;
+    text-align: center;
+    font-size: 20px;
+}
+.tre-container-first-line {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.tre-container-first-line span {
+    font-size: 20px;
+}
+.tre-second-line{
+    display: flex;
+    width: 100%;
+}
+.tre-second-btn{
+    width: 33.3%;
+    border: 1px solid var(--color-blue);
+    background-color: rgb(255, 255, 255);
+    padding: 6px 0;
+    margin: 10px 0;
+}
+.tre-second-btn:first-child,
+.tre-third-btn:first-child{
+    border-radius: 5px 0 0 5px;
+}
+.tre-second-btn:last-child,
+.tre-third-btn:last-child{
+    border-radius: 0 5px 5px 0;
+}
+.tre-second-btn:hover,
+.tre-third-btn:hover{
+    background-color: var(--color-blue);
+}
+
+.tre-third-line{
+    display: flex;
+    width: 100%;
+}
+.tre-third-btn{
+    width: 50%;
+    border: 1px solid var(--color-blue);
+    background-color: rgb(255, 255, 255);
+    padding: 6px 0;
+    margin: 10px 0;
+}
+
+.tre-btn{
+    padding:5px;
+    background-color: var(--color-blue);
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    margin: 10px;
+}
+
+/* .tre-order-list{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+} */
+
+/* .tre-input-line{
+    width: 40%;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 3px 0;
+    margin: 0 10px;
+    text-align: center;
+} */
+
+/* .input-kg{
+width: 200px;
+}
+.input-count,
+.intput-time{
+    width: 150px;
+} */

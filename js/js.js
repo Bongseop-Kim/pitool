@@ -38,13 +38,13 @@ $('.ti-member-plus-btn').on('click', function(){
 // 추가되는 값들 
 
 
-$('.routine-name').on('click', function(){
+$('.routine-card').on('click', function(){
     $('.list-group-routine-name').toggleClass('none');
 })
 // 등록된 루틴 확인
 
 
-$('.exercise-plus-list').on('click', function(){
+$('.trep-exercise-card').on('click', function(){
     $('.exercise-list').toggleClass('none');
 })
 // 운동 리스트 확인 트레이너
@@ -57,16 +57,23 @@ $('.exercise-plus-list').on('click', function(){
     settingCount = document.getElementById('setting-value').value;
     document.getElementById('kgcountlist').innerHTML = '';
     for (var i = 0; i < settingCount; i++){
-        템플릿 = `<div class="order${i}">${i+1}set  <span class='input-kg show'><input class="input-box"/>kg</span>  
-        <span class='input-count show'><input class="input-box"/>개</span>  
-        <span class='input-time show'><input class="input-box"/><span class="hr-mi-se">초</span></span> <br><br>`;
+        템플릿 = `<div class="tre-order${i} tre-order-list">
+        <span>${i+1}set</span>  
+        <span class='input-kg show'><input class="tre-input-line"/>kg</span>  
+        <span class='input-count show'><input class="tre-input-line"/>개</span>  
+        <span class='input-time show'>
+            <input class="tre-input-line"/>
+            <span class="hr-mi-se">초</span>
+        </span>`;
         $('#kgcountlist').append(템플릿);
     } 
   };
 
 
   $('.btn-kg-count').on('click', function(){
-      $('.input-kg').removeClass('none');
+    $('.tre-second-btn').css('background',`white`)
+    $('.btn-kg-count').css('background',`var(--color-blue)`)
+    $('.input-kg').removeClass('none');
     $('.input-kg').addClass('show');
     $('.input-count').removeClass('none');
     $('.input-count').addClass('show');
@@ -76,6 +83,8 @@ $('.exercise-plus-list').on('click', function(){
 });
   
 $('.btn-count').on('click', function(){
+    $('.tre-second-btn').css('background',`white`)
+    $('.btn-count').css('background',`var(--color-blue)`)
     $('.input-kg').removeClass('show');
     $('.input-kg').addClass('none');
     $('.input-count').removeClass('none');
@@ -87,6 +96,8 @@ $('.btn-count').on('click', function(){
 
 
 $('.btn-time').on('click', function(){
+    $('.tre-second-btn').css('background',`white`)
+    $('.btn-time').css('background',`var(--color-blue)`)
     $('.input-kg').removeClass('show');
     $('.input-kg').addClass('none');
     $('.input-count').removeClass('show');

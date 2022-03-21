@@ -1,0 +1,64 @@
+.trep-screen{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.trep-routine-loading{
+    float: right;
+    margin-bottom: 20px;
+    color: blue;
+    font-weight: 700;
+    background-color: white;
+    border: none;
+}
+.trep-input-box{
+    margin: 10px 0;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 5px 0;
+}
+.trep-seond-line{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 30px;
+}
+.trep-btn{
+    border: none;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+.trep-exercise-card{
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color-blue);
+    padding: 10px;
+    margin: 10px 0;
+}
+.trep-card-firstline{
+    display: flex;
+    justify-content: space-between;
+}
+.exercise-list-contents{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.trep-card-lastline{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 40px;
+}
+.trep-btn-box{
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color-blue);
+    width: 100px;
+    padding: 5px;
+    margin: 20px 0;
+}
+
+.trep-btn-center{
+    display: flex;
+    justify-content: center;
+}

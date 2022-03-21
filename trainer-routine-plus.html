@@ -16,7 +16,7 @@
         </button>
       </div>
       <div class="nav-right">
-        <a href="trainerr-index.html" class="navbar-brand">PITOOL</a>
+        <a href="trainer-index.html" class="navbar-brand">PITOOL</a>
       </div>
   </nav> 
   <ul class="nav-list">
@@ -32,7 +32,7 @@
   <div class="tr-screen">  
     <span>배정된 루틴</span>
     <br>
-    <button class="btn btn-info mt-2 w-50" onclick="location='trainer-routine-exercise-plus.html'">
+    <button class="routine-plus-btn" onclick="location='trainer-routine-exercise-plus.html'">
         <a>루틴을 추가해 보세요.
           <br/>+루틴 추가하기</a>
     </button>
@@ -40,17 +40,26 @@
     <br>
     <span>루틴 등록시▽</span>
     <br>
-    <button class="btn btn-info mt-2 w-50">
-        <a class="routine-name">id=루틴 이름</a>
-        <br>
+    <button class="routine-card">
+      <div class="trp-card-first-line"> 
+        <span>루틴 이름</span>
+        <span>5 workouts</span>
+      </div>
+      <div class="trp-card-second-line">
+        <div class="trp-card-box">가슴</div>
+        <div class="trp-card-box">어깨</div>
+      </div> 
         <!-- 터치시 루틴에 등록된 운동들 보여줌 -->
-        <div class="list-group-routine-name none ">
-          <div>벤치프레스 5set</div>
-          <div>플라잉 머신 5set</div>
-          <div>체스트 프레스 5set</div>
-        </div>
-        <div class="mt-2">#휴지통 #연필</div>
-    </div>
+      <div class="list-group-routine-name none">
+        <div>벤치프레스 5set</div>
+        <div>플라잉 머신 5set</div>
+        <div>체스트 프레스 5set</div>
+      </div>
+      <div class="frp-card-lastline">
+          <div class="trp-icon-container"><img src="icon/trash-can-solid.svg" class="trash-can">삭제하기</div>
+          <div class="trp-icon-container"><img src="icon/pencil-solid.svg" class="pencil">수정하기</div>
+      </div>
+    </button>
 
     <script
       src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
