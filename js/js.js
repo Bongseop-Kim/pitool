@@ -58,13 +58,13 @@ $('.trep-exercise-card').on('click', function(){
     document.getElementById('kgcountlist').innerHTML = '';
     for (var i = 0; i < settingCount; i++){
         템플릿 = `<div class="tre-order${i} tre-order-list">
-        <span>${i+1}set</span>  
-        <span class='input-kg show'><input class="tre-input-line"/>kg</span>  
-        <span class='input-count show'><input class="tre-input-line"/>개</span>  
-        <span class='input-time show'>
+        <div>${i+1}set</div>  
+        <div class='input-kg show'><input class="tre-input-line"/>kg</div>  
+        <div class='input-count show'><input class="tre-input-line"/>개</div>  
+        <div class='input-time show'>
             <input class="tre-input-line"/>
-            <span class="hr-mi-se">초</span>
-        </span>`;
+            <span class='hr-mi-se'>초</span>
+        </div>`;
         $('#kgcountlist').append(템플릿);
     } 
   };
@@ -105,30 +105,30 @@ $('.btn-time').on('click', function(){
     $('.input-time').removeClass('none');
     $('.input-time').addClass('show');
     $('.time-set').html('')
-    const time = `<br><button class="btn btn-info btn-hours" type="button" >시간</button>
-      <button class="btn btn-info btn-minutes">분</button>
-      <button class="btn btn-info btn-seconds">초</button>`
-      $('.time-set').append(time)
-      $('.btn-hours').on('click',function(){
-      $('.hr-mi-se').html('시간');
-      })
-      $('.btn-minutes').on('click',function(){
-      $('.hr-mi-se').html('분');
+    const time = `<button class="btn-hours" type="button" >시간</button>
+      <button class="btn-minutes">분</button>
+      <button class="btn-seconds">초</button>`
+    $('.time-set').append(time)
+    $('.btn-hours').on('click',function(){
+        $('.hr-mi-se').html('시간');
     })
-      $('.btn-seconds').on('click',function(){
-      $('.hr-mi-se').html('초');
+    $('.btn-minutes').on('click',function(){
+        $('.hr-mi-se').html('분');
+    })
+    $('.btn-seconds').on('click',function(){
+        $('.hr-mi-se').html('초');
     })
 })
 
 $('.all-set').on('click', function(){
     for ( var i = 0; i < settingCount-1; i++){
-    $('.order'+i).addClass('none')
+    $('.tre-order'+i).addClass('none')
     }
 })
 
 $('.different-set').on('click', function(){
     for ( var i = 0; i < settingCount-1; i++){
-    $('.order'+i).removeClass('none')
+    $('.tre-order'+i).removeClass('none')
     }
 })
 

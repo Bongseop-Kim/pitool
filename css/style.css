@@ -16,6 +16,8 @@
 @import "screen/trainer-routine-plus.css";
 @import "screen/trainer-routine-exercise-plus.css";
 @import "screen/trainer-routine-exercise.css";
+@import "screen/index.css";
+@import "screen/member-exercise-check.css";
 /* components */
 @import "components/calendar.css";
 @import "components/nav.css";

@@ -3,28 +3,29 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>트레이너를 위한 도구, 피툴(PITOOL)</title>
 </head>
   <body>
-    <div class="container mt-4">
-      <span>트레이너 로그인</span>
-      <div class="form-floating mb-3">
-          <input type="email" class="form-control mt-2" id="floatingInput" placeholder="name@example.com">
-          <label for="floatingInput">이메일 주소</label>
+    <div class="member-login-screen">
+      <h4>트레이너 로그인</h4>
+      <div class="input-container">
+        <div class="ml-input-box">
+          <div>이메일 주소</div>
+          <input type="email" class="ml-input-inbox" placeholder="name@example.com">
         </div>
-        <div class="form-floating">
-          <input type="password" class="form-control mt-2" id="floatingPassword" placeholder="Password">
-          <label for="floatingPassword">비밀번호</label>
+        <div class="ml-input-box">
+          <div>비밀번호</div>
+          <input type="password" class="ml-input-inbox" placeholder="Password">
+        </div>
       </div>
-      <div class="container row">
-        <button type="button" onclick="location.href='trainer-index.html';" class="btn btn-primary m-3 col">로그인</button>
-        <button type="button" onclick="location.href='sign-up.html';" class="btn btn-primary m-3 col">회원가입</button>
-      </div>
-    </div>
+      <button type="button" onclick="location.href='trainer-index.html';" class="ml-btn">로그인</button>
+  
+  
+  
+      <button type="button" onclick="location.href='sign-up.html';" class="ml-btn">회원가입</button>
+    </div>  
     
     <script src="js/js.js"></script>
-      <script src="js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
